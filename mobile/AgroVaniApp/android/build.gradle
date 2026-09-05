@@ -19,3 +19,7 @@ buildscript {
 }
 
 apply plugin: "com.facebook.react.rootproject"
+
+configurations.all {
+    exclude group: 'com.android.support'
+}

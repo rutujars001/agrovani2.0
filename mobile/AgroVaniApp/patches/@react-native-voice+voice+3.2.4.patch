@@ -1,0 +1,51 @@
+diff --git a/node_modules/@react-native-voice/voice/android/build.gradle b/node_modules/@react-native-voice/voice/android/build.gradle
+index 8fce879..60608ae 100644
+--- a/node_modules/@react-native-voice/voice/android/build.gradle
++++ b/node_modules/@react-native-voice/voice/android/build.gradle
+@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
+ 
+ repositories {
+     mavenLocal()
+-    jcenter()
++    mavenCentral()
+     maven {
+         // For developing the library outside the context of the example app, expect `react-native`
+         // to be installed at `./node_modules`.
+@@ -32,15 +32,14 @@ android {
+     buildTypes {
+         release {
+             minifyEnabled false
+-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+-        }
++            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+     }
+ }
+ 
+ buildscript {
+     if (project == rootProject) {
+         repositories {
+-            jcenter()
++            mavenCentral()
+         }
+         dependencies {
+             classpath 'com.android.tools.build:gradle:3.3.2'
+@@ -53,7 +52,7 @@ buildscript {
+ 
+ allprojects {
+     repositories {
+-        jcenter()
++        mavenCentral()
+     }
+ }
+ 
+diff --git a/node_modules/@react-native-voice/voice/example/android/.gradle/5.5/fileChanges/last-build.bin b/node_modules/@react-native-voice/voice/example/android/.gradle/5.5/fileChanges/last-build.bin
+new file mode 100644
+index 0000000..f76dd23
+Binary files /dev/null and b/node_modules/@react-native-voice/voice/example/android/.gradle/5.5/fileChanges/last-build.bin differ
+diff --git a/node_modules/@react-native-voice/voice/example/android/.gradle/5.5/fileHashes/fileHashes.lock b/node_modules/@react-native-voice/voice/example/android/.gradle/5.5/fileHashes/fileHashes.lock
+new file mode 100644
+index 0000000..f3faaf7
+Binary files /dev/null and b/node_modules/@react-native-voice/voice/example/android/.gradle/5.5/fileHashes/fileHashes.lock differ
+diff --git a/node_modules/@react-native-voice/voice/example/android/.gradle/5.5/gc.properties b/node_modules/@react-native-voice/voice/example/android/.gradle/5.5/gc.properties
+new file mode 100644
+index 0000000..e69de29
