@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+// import {SafeAreaProvider, SafeAreaView} from 'react-native-safe-area-context';
 import {
   ActivityIndicator,
   SafeAreaView,
@@ -42,7 +43,7 @@ function App(): React.JSX.Element {
 
   return (
     <SafeAreaView style={styles.safeArea}>
-      <StatusBar barStyle="light-content" backgroundColor="#1B5E20" />
+      <StatusBar barStyle="light-content" />
       <View style={styles.container}>
         <Text style={styles.title}>AgroVani</Text>
         <Text style={styles.subtitle}>अ‍ॅग्रोवाणी</Text>
