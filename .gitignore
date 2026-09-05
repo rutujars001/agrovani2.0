@@ -67,3 +67,5 @@ Desktop.ini
 # ---------- Logs ----------
 *.log
 logs/
+build-error.txt
+*-error.txt
