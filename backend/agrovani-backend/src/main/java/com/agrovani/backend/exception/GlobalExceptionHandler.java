@@ -24,14 +24,14 @@ public class GlobalExceptionHandler {
         return ResponseEntity.badRequest().body(body);
     }
 
-    @ExceptionHandler(DuplicatePhoneNumberException.class)
-    public ResponseEntity<Map<String, Object>> handleDuplicate(DuplicatePhoneNumberException ex) {
+    @ExceptionHandler(DuplicateResourceException.class)
+    public ResponseEntity<Map<String, Object>> handleDuplicate(DuplicateResourceException ex) {
         return ResponseEntity.status(HttpStatus.CONFLICT)
                 .body(baseBody(HttpStatus.CONFLICT, ex.getMessage()));
     }
 
-    @ExceptionHandler(FarmerNotFoundException.class)
-    public ResponseEntity<Map<String, Object>> handleNotFound(FarmerNotFoundException ex) {
+    @ExceptionHandler(ResourceNotFoundException.class)
+    public ResponseEntity<Map<String, Object>> handleNotFound(ResourceNotFoundException ex) {
         return ResponseEntity.status(HttpStatus.NOT_FOUND)
                 .body(baseBody(HttpStatus.NOT_FOUND, ex.getMessage()));
     }
