@@ -1,0 +1,21 @@
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.ttf binary
+*.otf binary
+*.apk binary
+*.aab binary
+*.keystore binary
+*.jks binary
+*.h5 binary
+*.pt binary
+*.tflite binary
+*.onnx binary
+
+*.bat text eol=crlf
+*.cmd text eol=crlf
+mvnw text eol=lf
+gradlew text eol=lf

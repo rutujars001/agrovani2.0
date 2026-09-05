@@ -1,0 +1,69 @@
+# ---------- Java / Maven ----------
+target/
+*.class
+*.jar
+*.war
+!**/mvnw
+!**/mvnw.cmd
+!**/.mvn/wrapper/maven-wrapper.jar
+
+# ---------- Secrets ----------
+**/application-local.properties
+**/application.properties
+.env
+*.pem
+*.keystore
+*.jks
+
+# ---------- Node / React Native ----------
+node_modules/
+npm-debug.log
+yarn-error.log
+.metro-health-check*
+*.tsbuildinfo
+
+# ---------- Android ----------
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+android/.cxx/
+*.apk
+*.aab
+*.hprof
+
+# ---------- iOS (future) ----------
+ios/Pods/
+ios/build/
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.ipynb_checkpoints/
+
+# ---------- ML artifacts ----------
+*.h5
+*.pt
+*.pth
+*.onnx
+*.tflite
+datasets/
+uploads/
+
+# ---------- IDE ----------
+.idea/
+*.iml
+.vscode/
+*.swp
+
+# ---------- OS ----------
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# ---------- Logs ----------
+*.log
+logs/
